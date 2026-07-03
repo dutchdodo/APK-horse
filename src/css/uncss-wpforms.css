@@ -1,0 +1,202 @@
+/* Reset hoeft net denk ik */
+/* .wpforms-form {
+	input, 
+	label, 
+	select, 
+	button, 
+	textarea {
+		margin: 0;
+		border: 0;
+		padding: 0;
+		display: inline-block;
+		vertical-align: middle;
+		background: none;
+		background-color: rgba(0, 0, 0, 0);
+		height: auto;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+} */
+
+.wpforms-form {
+	/* input[type="date"],  */
+	/* input[type="datetime"],  */
+	/* input[type="datetime-local"],  */
+	input[type="email"], 
+	/* input[type="month"],  */
+	input[type="number"], 
+	/* input[type="password"],  */
+	/* input[type="range"],  */
+	/* input[type="search"],  */
+	input[type="tel"], 
+	input[type="text"], 
+	/* input[type="time"],  */
+	/* input[type="url"],  */
+	/* input[type="week"],  */
+	select, 
+	textarea {
+		/* display: none; */
+		background-color: #fff;
+		/* background-color: #cc0000; */
+		/* box-sizing: border-box; */
+		border-radius: 2px;
+
+		color: #333;
+		/* -webkit-box-sizing: border-box; */
+		/* -moz-box-sizing: border-box; */
+
+		/* display: block; */
+		/* float: none; */
+		/* font-size: 16px; */
+		/* font-family: inherit; */
+		border: 1px solid #ccc;
+
+		padding: 6px 10px;
+
+		height: 38px;
+		width: 100%;
+		line-height: 1.3;
+	} 
+}
+
+/* Button */
+
+.wpforms-form {
+	input[type="submit"], 
+	button[type="submit"], 
+	.wpforms-page-button {
+		/* display: none; */
+		/* background-color: #eee; */
+		/* border: 1px solid #ddd; */
+		/* color: #333; */
+		/* font-size: 1em; */
+		/* font-family: inherit; */
+		/* padding: 10px 15px; */
+		background-color: #b58112 !important;
+		color: #fff !important;
+		/* font-size: 18px !important; */
+		/* font-weight: 400 !important; */
+		padding: 7px 20px ;
+	}
+}
+/* textfield */
+textarea.wpforms-field-medium {
+  	height: 120px;
+}
+.wpforms-form textarea {
+  min-height: 38px;
+  resize: vertical;
+}
+
+/* Layout */
+.wpforms-form { 
+	/* .wpforms-five-sixths,  */
+	/* .wpforms-four-sixths,  */
+	/* .wpforms-four-fifths,  */
+	/* .wpforms-one-fifth,  */
+	/* .wpforms-one-fourth,  */
+	.wpforms-one-half
+	/* .wpforms-one-sixth,  */
+	/* .wpforms-one-third,  */
+	/* .wpforms-three-fourths,  */
+	/* .wpforms-three-fifths,  */
+	/* .wpforms-three-sixths,  */
+	/* .wpforms-two-fourths,  */
+	/* .wpforms-two-fifths,  */
+	/* .wpforms-two-sixths,  */
+	/* .wpforms-two-thirds  */
+	{
+		float: left;
+		margin-left: 20px;
+		clear: none;
+	}
+}
+/* ------------------ */
+.wpforms-form .wpforms-field-row::before {
+  content: "";
+  display: table;
+}
+.wpforms-form .wpforms-field-row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* ------------------ */
+.wpforms-form .wpforms-field {
+  padding: 10px 0;
+  clear: both;
+}
+.wpforms-form .wpforms-submit-container {
+  padding: 10px 0 0 0;
+  clear: both;
+  position: relative;
+}
+.wpforms-first {
+  clear: both !important;
+  margin-left: 0 !important;
+}
+
+
+.wpforms-one-half, 
+.wpforms-three-sixths, 
+.wpforms-two-fourths {
+  width: calc( 50% - 10px);
+}
+input.wpforms-field-medium, 
+select.wpforms-field-medium, 
+.wpforms-field-row.wpforms-field-medium {
+  max-width: 60%;
+}
+
+/* Labels */
+.wpforms-label-hide, 
+.wpforms-sublabel-hide {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+/* kennelijk een field om te verbergen */
+.wpforms-field-hp {
+  display: none !important;
+  position: absolute !important;
+  left: -9000px !important;
+}
+
+
+/* error */
+label.wpforms-error {
+  display: block;
+  color: #990000;
+  font-size: 12px;
+  float: none;
+  cursor: default;
+  margin-top: 8px;
+}
+.wpforms-field {
+	input.wpforms-error, 
+	input.user-invalid, 
+	textarea.wpforms-error, 
+	textarea.user-invalid, 
+	select.wpforms-error, 
+	select.user-invalid, 
+	&.wpforms-has-error .choices__inner {
+		border: 1px solid #cc0000;
+	}
+}
+/* Confitamtie */
+.wpforms-confirmation-container-full, div[submit-success] > .wpforms-confirmation-container-full:not(.wpforms-redirection-message) {
+  background: #e0ffc7;
+  border: 1px solid #b4d39b;
+  box-sizing: border-box;
+}
+.wpforms-confirmation-container-full, div[submit-success] > .wpforms-confirmation-container-full {
+  color: #333;
+  margin: 0 auto 24px;
+  padding: 15px 15px;
+  overflow-wrap: break-word;
+}

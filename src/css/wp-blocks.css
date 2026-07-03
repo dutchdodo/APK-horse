@@ -1,0 +1,29 @@
+/* --------------------------------------- */
+/* wp-blocks */
+/* --------------------------------------- */
+
+/* Logica om WP block met een wit blokje te krijgen  */
+.wp-block-column.has-background {
+    padding: 1.5rem;
+}
+.wp-block-columns:has(.wp-block-column.has-background + 
+.wp-block-column:empty),
+.wp-block-columns:has(.wp-block-column:empty + 
+.wp-block-column.has-background) {
+    gap: 0;
+}
+
+.wp-block-image.aligncenter {
+    width: 100%;
+    > img {
+        display: inline-block;
+    }
+}
+/* ------------------- */
+
+/* :where(.wp-block-columns.has-background) {
+    padding: 1.25rem 2rem!important;
+}
+:where(.wp-block-column.has-background) {
+    padding: 1.25rem 2rem!important;
+} */

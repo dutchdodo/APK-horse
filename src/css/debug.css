@@ -1,0 +1,22 @@
+/* --------------------------------------- */
+/* Debug */
+/* --------------------------------------- */
+.container {
+    background-color: aquamarine;
+}
+.alignwide {
+    /* &::before{
+        content: "alignwide";
+        position: absolute;
+        background-color:black;
+        color: white;
+    } */
+}
+.alignfull {
+    /* &::before{
+        content: "alignfull";
+        position: absolute;
+        background-color:black;
+        color: white;
+    } */
+}

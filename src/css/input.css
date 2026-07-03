@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import "./theme.css";
+@import "./page.css";
+@import "./wp-blocks.css";
+@import "./homepage.css";
+@import "./sidemenu.css";
+@import "./animation.css";
+@import "./joinchat.css";
+/* @import "./debug.css"; */
+
+

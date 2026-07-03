@@ -1,0 +1,100 @@
+body{
+    position: relative;
+    transition: right 0.2s ease 0s;
+    right: 0;
+    .icon-menu-open{
+        display: inline-block;
+    }
+    .icon-menu-close{
+        display: none;
+    }
+}
+/* Algemeen */
+body.menuopen {
+    position: absolute;
+    .icon-menu-open{
+        display: none;
+    }
+    .icon-menu-close{
+        display: inline-block;
+    }
+}
+/* Het menu */
+#primary-menu{
+    transition: right 0.2s ease 0s; 
+    position: fixed;
+    top:0;
+    z-index: 1;
+}
+body.menuopen #primary-menu {
+    right: 0; 
+}
+/* MOBIEL VERSIE  */
+@media handheld, only screen and (max-width: 553px){
+    body.menuopen {
+        right: calc(100vw - 84px);
+    }
+    #primary-menu{
+        /* background-color: chartreuse; */
+        right: calc(84px - 100vw);
+        width: calc(100vw - 84px); 
+    }
+}
+ /* Version */
+@media handheld, only screen and (min-width: 554px){
+    body.menuopen {
+        right: 470px;
+    }
+    #primary-menu{
+        /* background-color: darkorange; */
+        right: -470px;
+        width: 470px; 
+    }
+}
+
+/* Styling the menu */
+#footer-menu,
+#primary-menu {
+    background-color: var(--color-secondary-dark);   
+    padding-top: 3.1rem;
+    padding-bottom: 3rem;
+    
+    color: white;
+    a {
+        display: inline-block;
+        position: relative;
+        padding:8px 8px 6px 8px;;
+        border-bottom: 1px solid rgba(255,255,255,.24);
+        border-radius: 4px;
+        background-color: inherit; 
+        color: inherit;
+        text-decoration: inherit;
+        &:hover, 
+        &:focus {
+            color: #fff;
+            background-color: var(--wp--preset--color--primary);
+            border-color: #b58112;
+        }
+        &.active,
+        &:active {
+            background-color: #fff;
+            color: var(--wp--preset--color--primary);
+            border-color: #b58112;
+        }
+
+    }
+}
+#footer-menu{
+    background-color: var(--color-secondary-dark);
+    > ul {
+        max-width: var(--wp--style--global--content-size);
+        margin-left: auto;
+        margin-right: auto;
+        > li {
+            padding: 8px 0px;
+            > ul {
+                display: none;
+            }
+        }
+    }
+}
