@@ -20,7 +20,6 @@
     bottom: 30px;
     z-index: 0;
     background: #FBFAF7 url('../img/bg-home-01.webp') no-repeat bottom center;
-    /* background-color: aqua; */
     transform: translateX(-50vw) rotate(-1deg);
     width: 100vw;
 }
