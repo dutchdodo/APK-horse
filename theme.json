@@ -5,6 +5,7 @@
     "appearanceTools": true,
 
     "layout": {
+      "allowEditing": true,
       "contentSize": "45rem",
       "wideSize": "1000px"
     },

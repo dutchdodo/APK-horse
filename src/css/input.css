@@ -3,7 +3,8 @@
 @import "./page.css";
 @import "./wp-blocks.css";
 @import "./homepage.css";
-@import "./sidemenu.css";
+@import "./sidemenu-open-close.css";
+@import "./navigation.css";
 @import "./animation.css";
 @import "./joinchat.css";
 /* @import "./debug.css"; */

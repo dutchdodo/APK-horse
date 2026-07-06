@@ -45,7 +45,8 @@
 			</svg>
 		</button>
 
-		<nav id="primary-menu" aria-label="Hoofdnavigatie" class="h-full overflow-x-hidden overflow-y-auto">
+		<!-- <nav id="primary-menu" aria-label="Hoofdnavigatie" class="h-full overflow-x-hidden overflow-y-auto"> -->
+			<nav id="primary-menu" aria-label="Hoofdnavigatie" class="nav-links layout-stack">
 		<?php
 		wp_nav_menu(
 			array(
@@ -53,7 +54,7 @@
 				'menu_class'      => 'flex-col',
 				'submenu_class'	  => '',
 				'theme_location'  => 'primary',
-				'li_class'        => 'p-4',
+				'li_class'        => '',
 				'a_class'        => '',
 				'a_class_active'  => 'active',
 				'fallback_cb'     => false,

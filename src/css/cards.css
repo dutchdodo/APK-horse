@@ -1,0 +1,114 @@
+<nav class="footer-cards">
+    <a href="/diensten" class="card">
+        <span class="icon">⚙️</span>
+        <div class="content">
+            <h3>Diensten</h3>
+            <p>Bekijk al onze diensten</p>
+        </div>
+    </a>
+
+    <a href="/projecten" class="card">
+        <span class="icon">📁</span>
+        <div class="content">
+            <h3>Projecten</h3>
+            <p>Recente projecten en cases</p>
+        </div>
+    </a>
+
+    <a href="/blog" class="card">
+        <span class="icon">📰</span>
+        <div class="content">
+            <h3>Nieuws</h3>
+            <p>Tips, updates en artikelen</p>
+        </div>
+    </a>
+
+    <a href="/contact" class="card">
+        <span class="icon">✉️</span>
+        <div class="content">
+            <h3>Contact</h3>
+            <p>Neem direct contact op</p>
+        </div>
+    </a>
+
+    <a href="/faq" class="card">
+        <span class="icon">❓</span>
+        <div class="content">
+            <h3>Veelgestelde vragen</h3>
+            <p>Vind snel een antwoord</p>
+        </div>
+    </a>
+
+    <a href="/support" class="card">
+        <span class="icon">💬</span>
+        <div class="content">
+            <h3>Support</h3>
+            <p>Wij helpen je graag verder</p>
+        </div>
+    </a>
+</nav>
+
+
+
+
+.footer-cards{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:1rem;
+}
+
+.footer-cards .card{
+    display:flex;
+    align-items:flex-start;
+    gap:1rem;
+
+    padding:1.25rem;
+
+    background:#fff;
+    border:1px solid #e5e5e5;
+    border-radius:12px;
+
+    text-decoration:none;
+    color:inherit;
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        border-color .2s ease;
+}
+
+.footer-cards .card:hover{
+    transform:translateY(-4px);
+    border-color:#b7c4d1;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.footer-cards .icon{
+    font-size:2rem;
+    line-height:1;
+}
+
+.footer-cards h3{
+    margin:0 0 .3rem;
+    font-size:1rem;
+}
+
+.footer-cards p{
+    margin:0;
+    font-size:.9rem;
+    opacity:.7;
+    line-height:1.5;
+}
+
+.footer-cards .card:focus-visible{
+    outline:2px solid #0a84ff;
+    outline-offset:3px;
+}
+
+@media (max-width:768px){
+
+    .footer-cards{
+        grid-template-columns:1fr;
+    }
+
+}
