@@ -2,11 +2,11 @@
 <!-- <article id="post-<?php //the_ID(); ?>" <?php //post_class(); ?>> -->
 <article>
 
-	<header class="entry-header">
+	<header>
 		<?php if ( is_front_page() ) {
 			the_title( sprintf( '<h1 id="title" class="sr-only"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' );
 		 } else {
- 		  the_title( sprintf( '<h1 id="title" class="entry-title pb-3 text-2xl md:text-3xl leading-tight text-primary"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' );
+ 		  the_title( sprintf( '<h1 id="title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' );
 		 } ?>
 	</header>
 

@@ -46,7 +46,6 @@ body.menuopen #primary-menu {
         right: 470px;
     }
     #primary-menu{
-        /* background-color: darkorange; */
         right: -470px;
         width: 470px; 
     }

@@ -1,17 +1,14 @@
 /* Styling the menu */
 #primary-menu {
     background-color: var(--color-secondary-dark);   
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 3.1rem 2rem 3rem 2rem;
+    overflow: hidden auto;
+    height: 100%;
   }
 #footer-menu{
     background-color: var(--color-secondary-dark);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-block: 3.1rem;
 }
-
 
 /* ------------------- */
 /* Grid */
@@ -19,9 +16,6 @@
 
 /* Basis */
 .nav-links ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   color: white;
 }
 
@@ -29,7 +23,6 @@
     ul{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
       gap: 12px 2rem;
     }
 }
@@ -38,12 +31,11 @@
     grid-template-columns: 1fr;
   }
 }
-
 .nav-links.layout-stack {
   ul{
     display: flex;
     flex-direction: column;
-    gap: .75rem;
+    gap: .85rem;
   }
 }
 
@@ -53,7 +45,7 @@
   border: solid 1px rgba(255, 255, 255, 0.1);
   border-radius: 6px;
   padding: 6px 8px;
-  text-decoration: none;
+  /* text-decoration: none; */
   transition: background 0.2s ease, transform 0.15s ease;
 
   &.active,
@@ -76,9 +68,6 @@
   }
 }
 
-
-
-
 /* ------------------- */
 /* Nummering */
 .nav-links.counter {
@@ -95,6 +84,7 @@
     font-size: 0.9em;
   }
 }
+/* ------------------- */
 /* icon */
 .nav-links .icon {
   color: #999;

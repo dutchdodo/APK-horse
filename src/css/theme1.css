@@ -1,0 +1,28 @@
+
+:root {
+
+  /* --color-primary: --wp--preset--color--primary; */
+  /* --color-secondary: --wp--preset--color--secondary; */
+  /* --color-foreground: --wp--preset--color--foreground */
+  /* --color-background: --wp--preset--color--background */
+   --color-secondary-dark: oklch(0.4911 0.0348 73.42);
+
+  --spacing: 0.25rem;
+
+/* Custom
+  ------------ */
+  /* --color-text:  */
+  /* --color-light: #f8f8f8; */
+  /* --color-muted: oklch(0.94 0.01 260); */
+  /* --color-muted-foreground: oklch(0.55 0.02 260); */
+  /* --color-border: oklch(0.9 0.01 260); */
+  /* --color-ring: oklch(0.55 0.25 260); */
+
+  
+}
+/* ---------------------------------------
+/* Dark version */
+/*--------------------------------------- */
+
+.dark {
+}

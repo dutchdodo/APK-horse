@@ -6,11 +6,11 @@
 
 
 	<!-- <aside> -->
-	<?php //if ( is_active_sidebar( 'home-bottom' ) ) { ?>
-	<!-- <aside class="container mx-auto text-gray-500"> -->
-		<?php //dynamic_sidebar( 'home-bottom' ); ?>
-	<!-- </aside> -->
-	<?php //} ?>
+	<?php if ( is_active_sidebar( 'home-bottom' ) ) { ?>
+		<aside>
+		<?php dynamic_sidebar( 'home-bottom' ); ?>
+		</aside>
+	<?php } ?>
 	<!-- </aside> -->
 
 
@@ -62,18 +62,15 @@
 					<dd>NL123456789B01</dd>
 				</dl>
 			</section>
+		</div>	
+		<!-- <?php //if ( is_active_sidebar( 'footer' ) ) { ?>
+		<div class="">
+			<?php //dynamic_sidebar( 'footer' ); ?>
 		</div>
+		<?php //} ?> -->
 
 		<!-- 5. Copyright -->
 		<p id="copyright" class="wp-block-paragraph alignfull">&copy; 2026 Acupunctuurpraktijk Kan</p>
-
-	
-
-		<?php //if ( is_active_sidebar( 'footer' ) ) { ?>
-		<!-- <div class="container mx-auto"> -->
-			<?php //dynamic_sidebar( 'footer' ); ?>
-		<!-- </div> -->
-		<?php //} ?>
 
 	</footer>
 
