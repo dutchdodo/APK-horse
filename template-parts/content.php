@@ -4,9 +4,9 @@
 
 	<header>
 		<?php if ( is_front_page() ) {
-			the_title( sprintf( '<h1 id="title" class="sr-only"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' );
+			the_title( sprintf( '<h1 id="title" class="sr-only">', esc_url( get_permalink() ) ), '</h1>' );
 		 } else {
- 		  the_title( sprintf( '<h1 id="title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' );
+ 		  the_title( sprintf( '<h1 id="title">', esc_url( get_permalink() ) ), '</h1>' );
 		 } ?>
 	</header>
 
