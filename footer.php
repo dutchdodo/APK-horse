@@ -6,9 +6,9 @@
 
 
 	<!-- <aside> -->
-	<?php if ( is_active_sidebar( 'home-bottom' ) ) { ?>
+	<?php if ( is_active_sidebar( 'content-aside' ) ) { ?>
 		<aside>
-		<?php dynamic_sidebar( 'home-bottom' ); ?>
+		<?php dynamic_sidebar( 'content-aside' ); ?>
 		</aside>
 	<?php } ?>
 	<!-- </aside> -->

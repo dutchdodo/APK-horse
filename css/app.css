@@ -381,6 +381,9 @@
 p:empty {
   display: none;
 }
+.wp-block-buttons.wp-block-buttons-is-layout-flex {
+  gap: 1rem;
+}
 .focus\:not-sr-only:focus {
   position: absolute !important;
   z-index: 100;

@@ -6,6 +6,10 @@
 p:empty{
     display: none;
 }
+/* Kleinere ruimte tussen buttons */
+.wp-block-buttons.wp-block-buttons-is-layout-flex {
+    gap: 1rem;
+}
 
 /* --------------------------------------- */
 /* Screenreader */

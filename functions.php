@@ -241,14 +241,14 @@ if ( ! function_exists( 'apk_widgets_init' ) ) :
 
 	/** Function block_lite_widgets_init */
 	function apk_widgets_init() {
-		// register_sidebar(array(
-		// 	'name'          => esc_html__( 'Home Bottom', 'apk' ),
-		// 	'id'            => 'home-bottom',
-		// 	'before_widget' => '<aside id="%1$s" class="organic-widget %2$s">',
-		// 	'after_widget'  => '</aside>',
-		// 	'before_title'  => '<h3 class="widget-title">',
-		// 	'after_title'   => '</h3>',
-		// ));
+		register_sidebar(array(
+			'name'          => esc_html__( 'Content aside', 'apk' ),
+			'id'            => 'content-aside',
+			'before_widget' => '<aside id="%1$s" class="organic-widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		));
 		register_sidebar(array(
 			'name'          => esc_html__( 'Footer Widgets', 'apk' ),
 			'id'            => 'footer',
