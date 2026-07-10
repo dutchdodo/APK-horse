@@ -176,6 +176,11 @@
         "typography": {
           "fontSize": "var(--wp--preset--font-size--xxl)",
           "fontWeight": "500"
+        },
+        "spacing": {
+          "margin": {
+            "bottom": "1rem"
+          }
         }
       },
       "h2": {
