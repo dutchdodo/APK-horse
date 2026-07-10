@@ -177,6 +177,9 @@
           "fontSize": "var(--wp--preset--font-size--xxl)",
           "fontWeight": "500"
         },
+        "color": {
+          "text": "var(--wp--preset--color--primary)"
+        },
         "spacing": {
           "margin": {
             "bottom": "1rem"
